@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "SocialMediaAPI.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SocialMediaAPI.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialMediaAPI.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SocialMediaAPI.Core/1.0.0": {
+      "type": "project",
+      "path": "../SocialMediaAPI.Core/SocialMediaAPI.Core.csproj",
+      "msbuildProject": "../SocialMediaAPI.Core/SocialMediaAPI.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "SocialMediaAPI.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/ebensuccess/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/ebensuccess/RiderProjects/social_media_api_ASP.NET/SocialMediaAPI/src/SocialMediaAPI.Core/SocialMediaAPI.Core.csproj": {
+              "projectPath": "/Users/ebensuccess/RiderProjects/social_media_api_ASP.NET/SocialMediaAPI/src/SocialMediaAPI.Core/SocialMediaAPI.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
